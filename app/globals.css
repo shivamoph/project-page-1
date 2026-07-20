@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #f8fafc;
-  color: #334155;
+  background: #eef1f5;
+  color: #1f2937;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #c7d2fe transparent;
+  scrollbar-color: #94a3b8 transparent;
 }
 
 *::-webkit-scrollbar {
@@ -23,10 +23,22 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #c7d2fe;
+  background: #94a3b8;
   border: 3px solid transparent;
   border-radius: 999px;
   background-clip: padding-box;
+}
+
+.product-title-clamp {
+  display: -webkit-box;
+  min-height: 2.5rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.touch-pinch-zoom {
+  touch-action: pinch-zoom;
 }
 
 .glass {
